@@ -21,7 +21,7 @@ public class SecurityConfig {
         return new WebMvcConfigurer(){
             @Override
             public void addCorsMappings(@NonNull CorsRegistry registry){
-                registry.addMapping("/**").allowedOrigins("http://localhost:4200","http://166.104.191.113")
+                registry.addMapping("/**").allowedOrigins("http://localhost:3000","http://166.104.191.113")
                 .allowedMethods(HttpMethod.GET.name(), HttpMethod.HEAD.name(), HttpMethod.POST.name(), HttpMethod.PUT.name(), HttpMethod.DELETE.name());
             }
         };
